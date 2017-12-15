@@ -1,0 +1,473 @@
+html, body {
+    position: relative;
+    height: 100%;
+    visibility: inherit;
+!important;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*音符*/
+
+.pause {
+    background-position: 0 bottom;
+}
+
+.mscBtn {
+    height: 50px;
+    display: block;
+}
+
+#audio_off {
+    animation: run 4s cubic-bezier(0.24, 0.24, 0.68, 0.68) infinite;
+}
+
+@keyframes run {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.notes {
+
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+    right: 27px;
+}
+
+.notes .a1 {
+    position: absolute;
+    top: -82%;
+}
+
+/*图标*/
+.swiper-button-next {
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 50%;
+    margin-left: -13.5px;
+    transform: rotate(-90deg);
+    -webkit-animation: start 1.5s infinite ease-in-out;
+
+}
+
+@keyframes start {
+    0%, 30% {
+        opacity: 0;
+        bottom:2em;
+    }
+
+    60% {
+        opacity: 1;
+        bottom:0em;
+    }
+
+    100% {
+        opacity: 0;
+        bottom:2em;
+    }
+}
+
+
+/*one*/
+.one {
+    background: url("../img/151f8ff769edb61eaeace58e9308d856.jpg");
+    background-size: cover;
+    background-repeat: round;
+
+}
+
+.lace img {
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+
+.border .ge {
+    width: 61%;
+    position: absolute;
+    top: -1%;
+    left: 21%;
+    transform: rotate(83deg);
+}
+
+.border .certificate {
+    position: absolute;
+    top: 7%;
+    left: 28%;
+    width: 45%;
+
+}
+
+.wedding img {
+
+    position: absolute;
+    width: 48%;
+    top: 36%;
+    left: 28%;
+}
+
+.married .married1 {
+    position: absolute;
+    left: 19%;
+    width: 67%;
+    top: 46%;
+}
+
+.married .married2 {
+    position: absolute;
+    left: 29%;
+    width: 49%;
+    top: 52%;
+}
+
+/*two*/
+.two {
+    background-color: #f9d3d7;
+
+}
+
+.leftTop img {
+    width: 36%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+
+.rightTop img {
+    width: 60%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.leftBottom img {
+    width: 33%;
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    z-index: 2;
+}
+
+.baibian .bai {
+    width: 112%;
+    position: absolute;
+    top: 92px;
+    left: -25px;
+    transform: rotate(176deg);
+}
+
+.baibian .tu {
+
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+    top: 137px;
+    left: 16%;
+
+}
+
+.love img {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    z-index: 4;
+}
+
+/*three*/
+.three {
+    background: #f9d3d7;
+}
+
+.niao img {
+    position: absolute;
+    width: 55%;
+    top: 1%;
+    left: 23%;
+}
+
+.leftTop1 img {
+    width: 42%;
+    position: absolute;
+    top: 17%;
+    left: -60px;
+    z-index: 2;
+
+}
+
+.leftBottom1 img {
+    width: 34%;
+    position: absolute;
+    left: 1%;
+    top: 56%;
+    z-index: 2;
+
+}
+
+.leftBottom2 img {
+    width: 21%;
+    position: absolute;
+    left: 77%;
+    top: 24%;
+    z-index: 2;
+
+}
+
+.fen {
+    width: 81%;
+    height: 36%;
+    position: absolute;
+    left: 9%;
+    top: 29%;
+}
+
+.tupian {
+    position: absolute;
+    top: 32%;
+    left: 47px;
+    width: 71%;
+}
+
+.name2 {
+    width: 183.5px;
+    height: 35px;
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: left;
+    color: rgb(222, 112, 141);
+    font-size: 20px;
+    line-height: 1.5;
+    box-shadow: black 0px 0px 0px;
+    letter-spacing: 0px;
+    left: 36%;
+    z-index: 2;
+    bottom: 28%;
+    text-align: center;
+}
+
+.bottomRight img {
+    position: absolute;
+    width: 46%;
+    bottom: 4%;
+    left: 28%;
+    top: 80%;
+}
+
+.rightBottom img {
+    position: absolute;
+    z-index: -1;
+    width: 105%;
+    bottom: -27%;
+}
+
+/*fove*/
+.fove {
+    background: url("../img/fove_02.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+.zikuang img {
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+}
+
+.zuhe {
+    position: relative;
+    width: 100%;
+    top: -44px;
+
+}
+
+.hudeijei {
+    width: 42%;
+    position: absolute;
+    top: 75px;
+    left: 29%;
+    z-index: 2;
+}
+
+.feikuang {
+    width: 82%;
+    position: absolute;
+    bottom: auto;
+    left: 9%;
+    top: 115px;
+}
+
+.moment h4 {
+    color: rgb(217, 41, 64);
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.moment .n1 {
+
+    position: absolute;
+    top: 71%;
+    left: 42%;
+
+}
+
+.moment .n2 {
+    position: absolute;
+    top: 76%;
+    left: 35%;
+
+}
+
+.moment .n3 {
+    position: absolute;
+    top: 80%;
+    left: 31%;
+
+}
+
+.moment p {
+    color: rgb(217, 41, 64);
+    font-size: 14px;
+    line-height: 15px;
+    z-index: 2;
+
+}
+
+/*five*/
+.five {
+    background: #fbe1e1;
+}
+
+.address img {
+    position: absolute;
+    top: 6%;
+    left: 30%;
+}
+
+.jiao img {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    left: -2%;
+}
+
+.you img {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 36%;
+}
+
+.huanying {
+    position: absolute;
+    top: 62%;
+    color: red;
+    font-size: 28px;
+    font-weight: 700;
+    left: 37%;
+
+}
+
+/*six*/
+.six {
+    background: url("../img/fove_02.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+.zuhe1 .hudeijei1 {
+    width: 41%;
+    position: absolute;
+    top: 1%;
+    left: 29%;
+    z-index: 2;
+}
+
+.feikuang1 {
+    width: 82%;
+    position: absolute;
+    bottom: auto;
+    left: 9%;
+    top: 8%;
+}
+
+.biaoge {
+    margin-top: 26%;
+}
+
+.biaoge input {
+    height: 32px;
+    width: 60%;
+    margin-top: 12px;
+}
+
+.cheng {
+    position: absolute;
+    top: 13%;
+    left: 21%;
+    color: rgb(217, 41, 64);
+    font-size: larger;
+    font-weight: 900;
+}
+
+.can button{
+    position: absolute;
+    top: 76%;
+    border-width: 0px;
+    background: rgb(217, 72, 87);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 36px;
+    padding: 12px 41px;
+    left: 26%;
+}
+
